@@ -1,0 +1,57 @@
+<!DOCtype html>
+<html lang="en">
+<head>
+<title>NAVIGATE</title>
+<style>
+	.outer {
+		width: 300px; height: 300px; background-color: lightblue; padding: 20px;
+	}
+	.middle {
+		width: 200px; height: 200px; background-color: lightcoral; padding: 20px;
+	.inner {
+		width: 100px; height: 100px; background-color: lightgreen; padding: 20px; font-size: 11pt;
+	}
+</style>
+<script src="test.js" defer></script>
+</head>
+<body>
+<button onclick="navInfo()">Info</button>
+<p id='info'></p>
+<button onclick="giveDate()">Date & Time</button><br>
+<p id='date'></p>
+<button onclick="newTime()">Time Stamp</button><br>
+<p id='tstamp'></p>
+<button onclick="detectSpam()">Check Spam</button><br>
+<p id='result'></p>
+<button onclick="giveWarning()">Warning</button><br>
+<button onclick="checkHistory()">History</button><br>
+<p id="history"></p>
+<button onclick="wrangleArray()">Array</button><br>
+<div id="warray1"></div>
+<div id="warray2"></div>
+<button id="myButton">Button</button><br>
+<button id="clicks">Clicker</button><br>
+<p id="sound"></p>
+<p>Clicks: <span id="counter">0</span></p>
+
+<a href="AiMerzOn.html" target=_blank id="site2">Adults Hub</a><br>
+<a href="AiMerzOn.html" target=_blank id="site1">Go to AiMerzOn</a><br>
+<a href="Youbetcha.html" target=_blank id="site1">Go to Youbetcha</a><br>
+
+<button onclick="history.forward()">Forward</button>
+<button onclick="history.back()">Backward</button><br>
+
+Stop the time to match: <b>00:09:585</b>
+<div id='timegame'></div>
+<input type='button' id='tbutton' value='Start' />
+<input type='button' onclick='location.reload()' value='Refresh' /><br>
+<input type='text' id='form_input' placeholder='Type here...' /><br>
+<div class='outer' id='outer'>
+	<div class='middle' id='middle'>
+		<div class="inner" id='inner'>
+			<p>This text will indicate material within the INNERMOST element</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
